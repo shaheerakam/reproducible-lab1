@@ -1,9 +1,9 @@
 # Reproducible Computing Lab 1
 
-A minimal toy project demonstrating a reproducible computing environment
-(Python via conda, R via renv, and a Docker container). The analysis itself
-is deliberately tiny: it summarizes a synthetic biomarker dataset by group and
-saves a boxplot. The point of the lab is the *environment*, not the science.
+A project demonstrating a reproducible computing environment
+(Python via conda). The analysis itself is tiny: it summarizes 
+a synthetic biomarker dataset by group and saves a boxplot. 
+The point of the lab is the *environment*, not the science.
 
 ```
 reproducible-lab1/
