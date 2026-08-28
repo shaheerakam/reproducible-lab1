@@ -1,30 +1,26 @@
 # AI Usage
 
-> Edit anything in [brackets] so this reflects what YOU actually did. Being
-> specific here is part of the grade -- graders can tell a copy-paste from a
-> real account of your process.
-
 ## Model(s) used
 - Claude (Anthropic), Opus 4.x, via the Claude web app.
 
 ## What I used it for
-- Generating the initial project scaffold (directory structure, `environment.yml`,
-  `requirements.txt`, `Dockerfile`, the toy `analysis.py` / `analysis.R`, and this
-  README) as a starting point.
-- Getting a step-by-step explanation of the git and terminal commands, since I
-  was new to them.
-- [Add anything else, e.g. "asked Claude to debug a conda channel conflict when
-  environment.yml wouldn't solve" -- and say what the fix was.]
+- Generating the initial project scaffold (directory structure, environment.yml,
+  requirements.txt, Dockerfile, the toy analysis.py / analysis.R, and the README)
+  as a starting point, and mapping it against the rubric to see what I still had
+  to do myself.
+- A full beginner walkthrough of installing Miniforge/conda on my Mac, after
+  "conda: command not found" showed it wasn't installed yet — it gave me the
+  curl + bash install steps.
+- Step-by-step help with git and GitHub, since I was new to them: initializing
+  the repo, committing, creating the remote, and pushing.
+- Troubleshooting my push failures: it explained that GitHub no longer accepts
+  account passwords (I needed a Personal Access Token), that the hidden password
+  prompt was normal, and that my "403 write access not granted" error meant the
+  repo didn't exist on github.com yet.
 
 ## What I changed or rejected
-- [Be concrete. Examples of the kind of thing to write:]
-- [Bumped the pinned pandas/numpy versions to match what actually installed on my
-  machine after running `conda env export`.]
-- [Rewrote the toy analysis to use my own dataset instead of the synthetic one.]
-- [Verified the Dockerfile actually builds -- see the docker output pasted below /
-  in my submission. Claude wrote it but could not run it for me.]
-- [Rejected suggestion X because Y.]
+- Some steps were hard to follow so I asked follow up questions
 
 ## What only I did (not AI)
 - Ran the commands on my own machine, generated `renv.lock`, built and ran the
-  Docker image, and confirmed the results. [Adjust to match reality.]
+  Docker image, and confirmed the results. 
