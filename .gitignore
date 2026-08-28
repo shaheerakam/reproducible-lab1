@@ -1,0 +1,24 @@
+# Generated outputs
+results/*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.uv/
+
+# conda
+.conda/
+
+# renv (keep renv.lock + settings, ignore the local library)
+renv/library/
+renv/local/
+renv/cellar/
+renv/staging/
+renv/python/
+
+# OS / editor
+.DS_Store
+.Rhistory
+.RData
+.ipynb_checkpoints/

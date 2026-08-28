@@ -1,0 +1,5 @@
+# Alternative to environment.yml, for the uv / pip workflow.
+# With uv:  uv venv --python 3.11 && uv pip install -r requirements.txt
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4

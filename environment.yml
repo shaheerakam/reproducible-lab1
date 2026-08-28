@@ -1,0 +1,10 @@
+name: repro-lab1
+channels:
+  - conda-forge
+dependencies:
+  - pip=24.0
+  - matplotlib=3.8.4
+  - numpy=1.26.4
+  - python=3.11
+  - pandas=2.2.2
+prefix: /Users/shaheerakamin/miniforge3/envs/repro-lab1
