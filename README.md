@@ -8,34 +8,34 @@ saves a boxplot. The point of the lab is the *environment*, not the science.
 ```
 reproducible-lab1/
 ├── README.md
-├── environment.yml       # Python / conda environment
-├── requirements.txt      # Python / uv|pip alternative
-├── renv.lock             # R environment (you generate this -- see R/setup_renv.R)
-├── Dockerfile            # Container that rebuilds the Python env
-├── AI_USAGE.md           # How AI was used on this assignment
+├── environment.yml     
+├── requirements.txt     
+├── renv.lock            
+├── Dockerfile           
+├── AI_USAGE.md          
 ├── src/
-│   └── analysis.py       # Python analysis
+│   └── analysis.py      
 ├── R/
-│   ├── analysis.R        # R analysis
-│   └── setup_renv.R      # how to create renv.lock
+│   ├── analysis.R        
+│   └── setup_renv.R      
 ├── data/
-│   └── toy_data.csv      # synthetic dataset
-└── results/              # generated figures (git-ignored)
+│   └── toy_data.csv    
+└── results/             
 ```
 
 ## Quickstart (Python / conda) -- ~2 minutes
 
 ```bash
-conda env create -f environment.yml     # creates env "repro-lab1"
+conda env create -f environment.yml    
 conda activate repro-lab1
-python src/analysis.py                   # prints summary + writes results/biomarker_by_group.png
+python src/analysis.py                  
 ```
 
 ## Quickstart (Python / uv) -- alternative
 
 ```bash
 uv venv --python 3.11
-source .venv/bin/activate                # Windows: .venv\Scripts\activate
+source .venv/bin/activate              
 uv pip install -r requirements.txt
 python src/analysis.py
 ```
@@ -44,8 +44,8 @@ python src/analysis.py
 
 ```r
 # from R started in the project root:
-renv::restore()          # installs the exact package versions from renv.lock
-source("R/analysis.R")   # prints summary + writes results/biomarker_by_group_R.png
+renv::restore()         
+source("R/analysis.R")  
 ```
 
 ## Quickstart (Docker)
@@ -55,10 +55,3 @@ docker build -t repro-lab1 .
 docker run --rm repro-lab1
 ```
 
-## Requirements
-- [Miniconda / Miniforge](https://github.com/conda-forge/miniforge) (for the conda path), OR
-- [uv](https://docs.astral.sh/uv/) (for the uv path)
-- [R](https://cran.r-project.org/) + the `renv` package (for the R path)
-- [Docker](https://docs.docker.com/get-docker/) (for the container path)
-
-No other setup or tribal knowledge required.
